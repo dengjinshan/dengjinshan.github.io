@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>welcome</title>
+    <url>/2019/10/10/welcome/</url>
+    <content><![CDATA[<h1 id="互联网广告交易"><a href="#互联网广告交易" class="headerlink" title="互联网广告交易"></a>互联网广告交易</h1><h2 id="Ad-Exchange-互联网广告交易平台"><a href="#Ad-Exchange-互联网广告交易平台" class="headerlink" title="Ad Exchange(互联网广告交易平台)"></a>Ad Exchange(互联网广告交易平台)</h2><ul>
+<li>联系着==DSP(买方平台)和SSP(卖方平台)==，通过接入SSP汇集大量媒体流量，从而收集属于广告目标客户的数据，是实现精准营销的交易场所</li>
+<li>在国外，主要有雅虎的RightMedia，谷歌的DoubleClick等</li>
+<li>在国内，广告交易平台的媒体资源多仅限于运营商自有资源(如阿里，新浪，腾讯等)</li>
+</ul>
+<h3 id="RTB模式"><a href="#RTB模式" class="headerlink" title="RTB模式"></a>RTB模式</h3><ul>
+<li>竞价机制是竞价获得，先到先得</li>
+<li>与传统购买形式相比，RTB是在每一个广告曝光基础上进行竞价，就是每一个PV都会进行一次展示竞价，谁出价高，谁的广告就会被这个PV看到</li>
+</ul>
+<h3 id="具体功能"><a href="#具体功能" class="headerlink" title="具体功能"></a>具体功能</h3><ul>
+<li>对广告主而言<ul>
+<li>收集出力属于广告目标客户的数据，自定义定向、出价和预算，在恰当时机买入符合需求的广告资源</li>
+</ul>
+</li>
+<li>对媒体而言<ul>
+<li>管理广告位</li>
+<li>便捷的投放计划，及时跟踪投放效果</li>
+<li>支持多种类型的广告创意</li>
+<li>精准定向</li>
+<li>收益优化等</li>
+</ul>
+</li>
+</ul>
+<h3 id="市场交易"><a href="#市场交易" class="headerlink" title="市场交易"></a>市场交易</h3><ul>
+<li>当一个用户访问广告位页面时，ssp端向AdExchange发出访问讯号，告知有一个访问请求</li>
+<li>ssp把广告位的具体信息，例如所属站点、最低出价以及通过DMP分析匹配后的用户属性信息打包发送给各个DSP</li>
+<li>DSP端开始对这个广告展现进行竞价，</li>
+<li>竞价获胜者就能够让自己的广告展现在这个广告位上，进而让用户看到。</li>
+</ul>
+<h2 id="AdSense"><a href="#AdSense" class="headerlink" title="AdSense"></a>AdSense</h2><ul>
+<li>ad exchange主要面向需要精细控制功能以免直销业务受损的发布商，如果直销业务不多或者渠道冲突不是担心的问题，那么可以选择adsense</li>
+</ul>
+<h2 id="AdSense和AdExchange区别"><a href="#AdSense和AdExchange区别" class="headerlink" title="AdSense和AdExchange区别"></a>AdSense和AdExchange区别</h2><ul>
+<li>匿名选项：adsense没有匿名选项，ad exchange可以选择实名，半公开，匿名方式或者组合形式销售广告资源</li>
+<li>首选交易：adsense无法设置首选交易，adexchange可以设置与买房商定每千次展示费用的首选交易</li>
+<li>过滤与屏蔽：adsense提供了账号级过滤，adexchange还可以根据屏蔽规则过滤</li>
+<li>报表：adexchange报表功能更灵活</li>
+<li>技术供应商许可：adexchange允许所有供应商，发布商可以屏蔽任何供应商，adsense允许大多数供应商，但是发布商不能屏蔽任何供应商</li>
+</ul>
+<h2 id="常用理念"><a href="#常用理念" class="headerlink" title="常用理念"></a>常用理念</h2><ul>
+<li>广告主(advertiser)</li>
+<li>媒体(publisher)</li>
+<li>广告代理商(agency)<ul>
+<li>广告网络(Ad Network)和广告交换平台(Ad Exchange)</li>
+</ul>
+</li>
+<li>受众(audience)</li>
+<li>人群(personal/segmentation)</li>
+<li>展示量(impression)</li>
+<li>点击量(click)</li>
+<li><strong>CPM（Cost Per Mille） ：展现成本，或者叫千人展现成本</strong><ul>
+<li>一般情况下，网络广告中，视频贴片、门户banner等非常优质的广告位通常采用CPM收费模式。</li>
+<li>广告主如何知道广告展示的次数<ul>
+<li>两种方式</li>
+<li>1，投放的媒体提供数据/开设后台，在数据后台中看广告投放期间展示多少次</li>
+<li>2，采用第三方检测机构数据(公正)，检测机构在投放的广告中放置检测代码，检测广告的展现，点击等数据，数据为广告主、代理商、媒介三方承认的数据</li>
+<li>国内网络广告第三方监测公司有秒针、admaster、Double Click等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>CPC（Cost Per Click） 点击成本，即每产生一次点击所花费的成本</strong><ul>
+<li>典型的按点击收费的模式就是搜索引擎的竞价排名，如谷歌、百度、360、搜狗的竞价排名。在CPC的收费模式下，不管广告展现了多少次，只要不产生点击，广告主是不用付费的。只有产生了点击，广告主才按点击数量进行付费</li>
+<li>监测方式同CPM。搜索引擎广告来说，一般情况是由媒体提供的数据，给广告主开放数据，广告主可以实时看到投放广告的数据</li>
+</ul>
+</li>
+<li><strong>CPA（Cost Per Action）：每行动成本。即按行动收费</strong><ul>
+<li>A指action行动，具体哪个行动，需要在投放广告时，广告主与代理公司和媒体约定好(一般是注册、互动、下载、下单、购买等)，在投放过程中，只要不产生约定行动，不管展现了多少次或者产生了多少次点击，都是不收费的</li>
+<li>CPS, CPR, CPP等都是CPA的一种，只是具体化了</li>
+<li>监测方式同CPM，只是监测代码不止要部署到投放的媒介上，可能还要部署到广告的落地页(网站、活动页)，具体部署到那一层要看约定的A是什么</li>
+</ul>
+</li>
+</ul>
+<h2 id="Ad-Network-广告网络"><a href="#Ad-Network-广告网络" class="headerlink" title="==Ad Network(广告网络)=="></a>==Ad Network(广告网络)==</h2><ul>
+<li>最出名的是Google的AdSense</li>
+<li>流程：<ul>
+<li>中介角色，代表媒体和广告主谈判，和广告主谈好价格，提供双方都能接受的价格，愿意进入的媒体，就签订一个协议</li>
+<li>广告主有广告需求—》发给Ad Network—》散布到适合的对应的媒体上</li>
+<li>广告主付费后—》大部分费用分配给媒体—》小部分留存做辛苦费</li>
+</ul>
+</li>
+<li>产生问题：<ul>
+<li>由于不同中介手中资源不同，造成广告主和媒体之间夹杂太多的中介(优势中介会把手中资源卖给另一个中介，并伴随着价格的变化)</li>
+<li>导致市场混乱</li>
+</ul>
+</li>
+<li><strong>这就催生了一个平台，Ad Exchange(广告交换平台)</strong><ul>
+<li>1，将中介整合起来展示给广告主</li>
+<li>2，定价机制，价高者得</li>
+<li>问题：界面繁琐，且出价是个问题，还需要判断广告位背后是否有目标受众</li>
+</ul>
+</li>
+<li><strong>又产生了新的事物，DSP(需求方平台)</strong><ul>
+<li>对接主流的Ad Exchange，然后提供给广告主一个统一的更加简单的操作页面</li>
+<li>而且淡化广告位概念，提出了target audience(目标受众)的概念，从购买广告位变成了购买目标受众</li>
+<li>DSP需要依靠强大的受众数据和数学能力，帮助广告主实时决策，依靠”程序化购买”方法</li>
+</ul>
+</li>
+<li><strong>为了获取全面精确的受众数据，产生了DMP(数据管理平台)，为DSP提供接口</strong><ul>
+<li>DMP为了获取受众数据，需要做两件事情</li>
+<li>1，需要为每个受众做一个标记，现有技术主要是通过cookie完成，也有比cookie更新更好的方式</li>
+<li>2，要能够实现跨域追踪  [域，简单指就是一个网站的范围，通常一个网站只有一个一级域名(baidu.com就是一级域名，music.baidu.com就是二级域名)，跨域就是多个网站或者多个以及域名，跨域追踪就是能够追踪同一个用户在多个网站(一级域名)上行为；跨域由分为两类：跨主域和跨子域；跨域追踪又分为冠以跨域追踪和狭义跨域追踪，广义上的追踪指用户在不同网站上的行为，狭义追踪指用户在同一个组织的网站中的行为]</li>
+</ul>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>first name</title>
+    <url>/2019/10/10/first-name/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>相信很多人也各种google百度了各种方案，然而搭</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2019/10/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
