@@ -74,7 +74,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: yilia
+#theme: yilia
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -101,3 +102,9 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
