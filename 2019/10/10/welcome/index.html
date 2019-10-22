@@ -471,6 +471,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -731,6 +734,25 @@ window.addEventListener('pjax:success', () => {
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '88e823f1268df49806f7',
+      clientSecret: 'a2969eb0ece1137a35736496f881a348fa35632d',
+      repo: 'dengjinshan.github.io',
+      owner: 'dengjinshan',
+      admin: ['dengjinshan'],
+      id: '9a13d8871e702788fb8388d228784d1a',
+        language: window.navigator.language || window.navigator.userLanguage,
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
     </div>
   
