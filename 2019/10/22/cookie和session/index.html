@@ -58,18 +58,18 @@
   };
 </script>
 
-  <meta name="description" content="*会话管理* *管理浏览器客户端和服务器端之间会话过程中产生的会话数据*">
+  <meta name="description" content="会话管理 管理浏览器客户端和服务器端之间会话过程中产生的会话数据">
 <meta name="keywords" content="状态保持">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cookie和session">
 <meta property="og:url" content="http://yoursite.com/2019/10/22/cookie和session/index.html">
 <meta property="og:site_name" content="Djs">
-<meta property="og:description" content="*会话管理* *管理浏览器客户端和服务器端之间会话过程中产生的会话数据*">
+<meta property="og:description" content="会话管理 管理浏览器客户端和服务器端之间会话过程中产生的会话数据">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-23T02:04:42.006Z">
+<meta property="og:updated_time" content="2019-10-23T03:29:46.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cookie和session">
-<meta name="twitter:description" content="*会话管理* *管理浏览器客户端和服务器端之间会话过程中产生的会话数据*">
+<meta name="twitter:description" content="会话管理 管理浏览器客户端和服务器端之间会话过程中产生的会话数据">
   <link rel="canonical" href="http://yoursite.com/2019/10/22/cookie和session/">
 
 
@@ -295,7 +295,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-23 10:04:42" itemprop="dateModified" datetime="2019-10-23T10:04:42+08:00">2019-10-23</time>
+                <time title="修改时间：2019-10-23 11:29:46" itemprop="dateModified" datetime="2019-10-23T11:29:46+08:00">2019-10-23</time>
               </span>
             
           
@@ -345,8 +345,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><center>*会话管理*</center></p>
-<p><center>*管理浏览器客户端和服务器端之间会话过程中产生的会话数据*</center><br><a id="more"></a></p>
+        <p><center>会话管理</center></p>
+<p><center>管理浏览器客户端和服务器端之间会话过程中产生的会话数据</center><br><a id="more"></a></p>
 <h1 id="会话技术"><a href="#会话技术" class="headerlink" title="会话技术"></a>会话技术</h1><p>Cookie技术：会话数据保存在浏览器客户端。<br>Session技术：会话数据保存在服务器端。</p>
 <h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><p>读取已经设置好的cookies, 每个HttpRequest 对象都有一个 COOKIES 对象，该对象的行为类似一个字典，你可以使用它读取任何浏览器发送给视图（view）的cookies<br>写cookies， 需要使用 HttpResponse对象的 set_cookie()方法。 这儿有个基于 GET 参数来设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">class HttpResponseBase:</span><br><span class="line">    ....</span><br><span class="line">    def set_cookie(self, key, value=&apos;&apos;, max_age=None, expires=None, path=&apos;/&apos;,</span><br><span class="line">                   domain=None, secure=False, httponly=False):</span><br><span class="line">                   </span><br><span class="line">        # max_age=None 关闭网页就过期， 有效其时间，单位是秒</span><br><span class="line">        # expires 到期时间，是一个日期格式 </span><br><span class="line">        </span><br><span class="line">        self.cookies[key] = value</span><br><span class="line">        if expires is not None:</span><br><span class="line">            ......</span><br><span class="line">        if max_age is not None:</span><br><span class="line">            ......</span><br><span class="line">            </span><br><span class="line">    # 加盐设置cookie     </span><br><span class="line">    def set_signed_cookie(self, key, value, salt=&apos;&apos;, **kwargs):</span><br><span class="line">        value = signing.get_cookie_signer(salt=key + salt).sign(value)</span><br><span class="line">        return self.set_cookie(key, value, **kwargs)</span><br><span class="line">    </span><br><span class="line">    ##  response.set_signed_cookie(&quot;login&quot;, &quot;yes&quot;, salt=&quot;SSS&quot;)  设置key, value salt</span><br><span class="line">    </span><br><span class="line">    ##  获取Cookie</span><br><span class="line">    ##  request.COOKIES[&apos;key&apos;]</span><br><span class="line">    ##  request.get_signed_cookie(key, default=RAISE_ERROR, salt=&apos;&apos;, max_age=None)</span><br><span class="line">    ##  default: 默认值  salt: 加密盐  max_age: 后台控制过期时间</span><br><span class="line">        </span><br><span class="line">    # 删除cookie实际上是设置过期时间为基准点，关闭就过期</span><br><span class="line">    def delete_cookie(self, key, path=&apos;/&apos;, domain=None):</span><br><span class="line">        self.set_cookie(key, max_age=0, path=path, domain=domain,</span><br><span class="line">                        expires=&apos;Thu, 01-Jan-1970 00:00:00 GMT&apos;)</span><br><span class="line">    </span><br><span class="line">    ##  rep = redirect(&quot;/login/&quot;)  redirect也是继承Response</span><br><span class="line">    ##  rep.delete_cookie(&quot;login&quot;)</span><br><span class="line"></span><br><span class="line">class HttpResponse(HttpResponseBase):</span><br><span class="line">    ......</span><br></pre></td></tr></table></figure></p>
 <blockquote>
