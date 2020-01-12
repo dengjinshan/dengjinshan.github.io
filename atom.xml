@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-25T16:14:14.995Z</updated>
+  <updated>2020-01-12T14:48:14.987Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2020开始</title>
+    <link href="http://yoursite.com/2020/01/12/2020%E5%BC%80%E5%A7%8B/"/>
+    <id>http://yoursite.com/2020/01/12/2020开始/</id>
+    <published>2020-01-12T14:38:43.000Z</published>
+    <updated>2020-01-12T14:48:14.987Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://github.com/dengjinshan/imageHub/blob/master/2020%E5%BC%80%E5%A7%8B/qj6240056030.jpg"></p><p><center>回顾和展望</center><br><a id="more"></a></p><p>回顾2019有太多做的不足的地方，很多事情信心满满的开始，却落了个草草收场的结局，很多知识花了大把时间和精力去学习，但是因为没有实践和在日常中具体使用，导致全然忘记，只留下笔记和一脸茫然的自己</p><p>新的一年已经开始，在新年里，要再次进行规划，希望能执行好一点</p><ul><li>结合爬虫，梳理python知识脉络，最好能将爬取数据到数据清洗再到数据展示这一过程比较清洗完整的掌握</li><li>结合工作，进行知识学习，包括自动化测试，性能测试和调优，自动化运维等</li><li>学习前端知识，利用测试开发的岗位职责，努力向全栈开发靠近</li><li>结合市场招聘信息，扩展知识面，将自己收藏的资料按照计划学习，不要云盘满满，脑袋空空</li><li>多读书！</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://github.com/dengjinshan/imageHub/blob/master/2020%E5%BC%80%E5%A7%8B/qj6240056030.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;回顾和展望&lt;/center&gt;&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="个人" scheme="http://yoursite.com/categories/%E4%B8%AA%E4%BA%BA/"/>
+    
+    
+      <category term="随笔" scheme="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>11月份总结</title>
